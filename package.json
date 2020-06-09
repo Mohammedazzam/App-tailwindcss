@@ -1,15 +1,17 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "tailwindcss": "^1.4.6"
-  }
+    "name": "app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "postcss src/main.css -o dist/main.css -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "postcss": "^7.0.32",
+        "postcss-cli": "^7.1.1",
+        "tailwindcss": "^1.4.6"
+    }
 }
