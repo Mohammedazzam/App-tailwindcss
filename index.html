@@ -11,6 +11,12 @@
 
     <!--------Font awesome---------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,22 +42,22 @@
                 </svg>
               </label>
             <input class="hidden" type="checkbox" id="menu-toggle">
-            <div class="hidden w-full md:flex md:flex-grow md:w-auto">
-                <ul>
-                    <li>
-                        <a href="#">about</a>
+            <div class="hidden w-full text-center md:flex md:flex-grow md:w-auto" id="menu">
+                <ul class="pt-5">
+                    <li class="py-2 mx-4">
+                        <a href="#" class="capetalize">about</a>
                     </li>
-                    <li>
-                        <a href="#">project</a>
+                    <li class="py-2 mx-4">
+                        <a href="#" class="capetalize">project</a>
                     </li>
-                    <li>
-                        <a href="#">resume</a>
+                    <li class="py-2 mx-4">
+                        <a href="#" class="capetalize">resume</a>
                     </li>
-                    <li>
-                        <a href="#">contact</a>
+                    <li class="py-2 mx-4">
+                        <a href="#" class="capetalize">contact</a>
                     </li>
                 </ul>
-                <div>
+                <div class="mt-2">
                     <i class="fa fa-moon-o" aria-hidden="true"></i>
                     <span>Color mode</span>
                 </div>
