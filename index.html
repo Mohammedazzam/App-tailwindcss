@@ -1,72 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marvel - Tailwindcss</title>
-  <link rel="stylesheet" href="dist/css/main.css">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- Font-awesome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    #menu-toggle:checked + #menu {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel - Tailwindcss</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--olw-carousel2 library-->
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="dist/css/main.css">
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Start Header Section -->
-  <header class="h-screen font-maven">
-    <div class="container mx-auto navbar">
-      <div class="lg:pl-4">
-        <a href="/" class="text-2xl py-2">
-          <i class="fa fa-diamond text-3xl mx-2" aria-hidden="true"></i>
-          <span class="font-bold capitalize">marvel</span>
-        </a>
-      </div>
-      <label for="menu-toggle" class="menuIcon">
+    <!-- Start Header Section -->
+    <header class="h-screen font-maven">
+        <div class="container mx-auto navbar">
+            <div class="lg:pl-4">
+                <a href="/" class="text-2xl py-2">
+                    <i class="fa fa-diamond text-3xl mx-2" aria-hidden="true"></i>
+                    <span class="font-bold capitalize">marvel</span>
+                </a>
+            </div>
+            <label for="menu-toggle" class="menuIcon">
         <svg class="fill-current text-gray-900"
           xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
             <title>menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
           </svg>
       </label>
-      <input class="hidden" type="checkbox" id="menu-toggle" />
-      <div class="menuItems" id="menu">
-        <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
-          <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">projects</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
-          <li class="py-2 mx-4"><a href="#" class="capitalize">contact</a></li>
-        </ul>
-        <div class="mt-2 lg:pr-4">
-          <i class="fa fa-moon-o" aria-hidden="true"></i>
-          <span> Color mode</span>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+            <div class="menuItems" id="menu">
+                <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
+                    <li class="py-2 mx-4"><a href="#" class="capitalize">about</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize">projects</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize">resume</a></li>
+                    <li class="py-2 mx-4"><a href="#" class="capitalize">contact</a></li>
+                </ul>
+                <div class="mt-2 lg:pr-4">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                    <span> Color mode</span>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="container mx-auto header-hero">
-      <div class="sm:w-full lg:w-1/2 px-2 pt-32">
-        <span class="header-hero-span">welcome to my portfolio website!</span>
-        <h1 class="text-4xl font-semibold my-4">Hey folks, I'm Marvel Sann Web Designer</h1>
-        <p class="mb-4 text-textColor tracking-wide text-lg">
-          Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web
-          development.
-        </p>
-        <div class="w-full">
-          <button class="btn sm:w-auto bg-grey text-textColor">
+        <div class="container mx-auto header-hero">
+            <div class="sm:w-full lg:w-1/2 px-2 pt-32">
+                <span class="header-hero-span">welcome to my portfolio website!</span>
+                <h1 class="text-4xl font-semibold my-4">Hey folks, I'm Marvel Sann Web Designer</h1>
+                <p class="mb-4 text-textColor tracking-wide text-lg">
+                    Building a successful product is a challenge. I am highly energetic in user experience design, interfaces and web development.
+                </p>
+                <div class="w-full">
+                    <button class="btn sm:w-auto bg-grey text-textColor">
             <i class="fa fa-file-text-o" aria-hidden="true"></i>
             download resume
           </button>
-          <button class="btn sm:w-auto bg-secondryColor text-white">get a free quote</button>
+                    <button class="btn sm:w-auto bg-secondryColor text-white">get a free quote</button>
+                </div>
+            </div>
+            <div class="mt-16 w-full lg:w-1/2 flex justify-center">
+                <img src="./dist/images/app/image_header.svg" alt="image_header" class="lg:w-4/5">
+            </div>
         </div>
-      </div>
-      <div class="mt-16 w-full lg:w-1/2 flex justify-center">
-        <img src="./dist/images/app/image_header.svg" alt="image_header" class="lg:w-4/5">
-      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Start Projects Section -->
+    <div class="container mx-auto text-center pb-16">
+        <div>
+            <h2>
+                Things I have designed for digital media agencies
+            </h2>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image01.png" alt="project 1">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image02.png" alt="project 2">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image03.png" alt="project 3">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image04.png" alt="project 4">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image05.png" alt="project 5">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
-  <!-- End Header Section -->
+    <!-- End Projects Section -->
+
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/owl.carousel.min.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
+
 </html>
